@@ -3,8 +3,21 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+.text-center {
+	position: relative;
+	left: 50%;
+	top: 30%;
+	text-align: center;
+	transform: translateX(-50%);
+}
+
+.d-font.white {
+	font-family: sans-serif;
+	color: white;
+}
 
 nav {
+	display: inline-block;
 	width: 100vw;
 	height: 7.5vh;
 	background: #287094;
@@ -17,15 +30,16 @@ nav {
 	height: 7.5vh;
 }
 
-.text-center {
-	position: relative;
-	left: 50%;
-	top: 30%;
-	text-align: center;
-	transform: translateX(-30%);
+#page-links {
+	position: absolute;
+	top: 0%;
+	left: 200px;
+	width: calc(100vw - 200px);
+	height: 7.5vh;
 }
 
-.d-font.white {
-	font-family: sans-serif;
-	color: white;
+#page-links li {
+	list-style: none;
+	list-style-type: none;
+	margin: 2px;
 }
