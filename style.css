@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	width: 100vw;
+	height: 7.5vh;
+	background: #287094;
+}
+
+#logo {
+	position: relative;
+	left: none !important;
+	width: 200px;
+	height: 7.5vh;
+}
+
+.text-center {
+	position: relative;
+	left: 50%;
+	top: 30%;
+	text-align: center;
+	transform: translateX(-30%);
+}
+
+.d-font.white {
+	font-family: sans-serif;
+	color: white;
+}
