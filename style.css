@@ -52,6 +52,68 @@ nav {
 	width: calc(100vw - 200px);
 	height: 7.5vh;
 }
+@media only screen and (max-width: 1070px) {
+	#page-links li {
+		display: inline-block;
+		top: 2px;
+		list-style: none;
+		list-style-type: none;
+		margin: 0 60px !important;
+	}
+
+	#page-links li::first-child {
+		margin-left: 70px;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	#page-links {
+		opacity: 0;
+	}
+
+	@media only screen and (max-height: 700px) {
+		.burger {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: 0.5%;
+			right: 5%;
+			border: 1px solid #000;
+		}
+	}
+	@media only screen and (min-height: 750px) {
+		.burger {
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			top: 0.5%;
+			right: 5%;
+			border: 1px solid #000;
+		}
+	}
+
+	@media only screen and (min-height: 850px) {
+		.burger {
+			position: absolute;
+			width: 48px;
+			height: 48px;
+			top: 0.8%;
+			border: 1px solid #000;
+		}
+	}
+	@media only screen and (min-height: 880px) {
+		.burger {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			border: 1px solid #000;
+			top: 1%;
+			right: 5%;
+			transition: all 0.5s ease;
+		}
+	}
+}
+
 #page-links li::first-child {
 	margin-left: 130px;
 }
@@ -81,14 +143,4 @@ a.a-link:active {
 a.a-link:hover {
 	text-decoration: none;
 	color: white;
-}
-
-@media only screen and (max-width: 1070) {
-	#page-links li {
-		display: inline-block;
-		top: 2px;
-		list-style: none;
-		list-style-type: none;
-		margin: 0 30px;
-	}
 }
