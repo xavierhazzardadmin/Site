@@ -82,3 +82,13 @@ a.a-link:hover {
 	text-decoration: none;
 	color: white;
 }
+
+@media only screen and (max-width: 1070) {
+	#page-links li {
+		display: inline-block;
+		top: 2px;
+		list-style: none;
+		list-style-type: none;
+		margin: 0 30px;
+	}
+}
