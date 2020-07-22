@@ -71,6 +71,28 @@ nav {
 		opacity: 0;
 	}
 
+	.burger {
+		position: absolute;
+		width: 35px;
+		height: 35px;
+		top: 0.5%;
+		right: 5%;
+		border: 1px solid #000;
+	}
+
+	@media only screen and (min-height: 500px) {
+		.burger {
+			position: absolute;
+			width: 36px !important;
+			height: 36px !important;
+			top: 0.5%;
+			right: 5%;
+			border: 1px solid #000;
+		}
+	}
+
+	@media only screen and (min-height: 550px) {
+	}
 	@media only screen and (max-height: 700px) {
 		.burger {
 			position: absolute;
