@@ -66,73 +66,53 @@ nav {
 	}
 }
 
+.drop-menu {
+	display: none;
+}
+.dropdown-btn {
+	display: none;
+}
+
 @media only screen and (max-width: 760px) {
 	#page-links {
-		opacity: 0;
+		display: none !important;
 	}
 
-	.burger {
-		position: absolute;
-		width: 35px;
-		height: 35px;
-		top: 0.5%;
-		right: 5%;
-		border: 1px solid #000;
+	.dropdown-btn {
+		display: inline-block !important;
+		width: 100vw;
+		height: 5vh;
+		background: #d4d4ce;
 	}
 
-	@media only screen and (min-height: 500px) {
-		.burger {
-			position: absolute;
-			width: 36px !important;
-			height: 36px !important;
-			top: 0.5%;
-			right: 5%;
-			border: 1px solid #000;
-		}
+	.arrows {
+		display: block !important;
+		position: relative;
+		text-align: center !important;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
-	@media only screen and (min-height: 550px) {
-	}
-	@media only screen and (max-height: 700px) {
-		.burger {
-			position: absolute;
-			width: 40px;
-			height: 40px;
-			top: 0.5%;
-			right: 5%;
-			border: 1px solid #000;
-		}
-	}
-	@media only screen and (min-height: 750px) {
-		.burger {
-			position: absolute;
-			width: 40px;
-			height: 40px;
-			top: 0.5%;
-			right: 5%;
-			border: 1px solid #000;
-		}
+	.arrow {
+		border: solid 023246;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 3px;
 	}
 
-	@media only screen and (min-height: 850px) {
-		.burger {
-			position: absolute;
-			width: 48px;
-			height: 48px;
-			top: 0.8%;
-			border: 1px solid #000;
-		}
+	.arrow {
+		border: solid black;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 3px;
 	}
-	@media only screen and (min-height: 880px) {
-		.burger {
-			position: absolute;
-			width: 50px;
-			height: 50px;
-			border: 1px solid #000;
-			top: 1%;
-			right: 5%;
-			transition: all 0.5s ease;
-		}
+
+	.down {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
 	}
 }
 
