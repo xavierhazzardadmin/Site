@@ -10,12 +10,17 @@
 
 .d-font {
 	font-family: sans-serif;
+	font-weight: bold;
+}
+
+d-font.t-color {
+	font-family: sans-serif;
+	color: #023246 !important;
 }
 
 .d-font.white {
 	font-family: sans-serif;
 	color: white !important;
-	font-weight: bold;
 }
 #drop-menu {
 	height: 0;
@@ -75,6 +80,11 @@ nav {
 	display: none;
 }
 
+.v-link {
+	display: inline-block;
+	margin: 15px;
+}
+
 @media only screen and (max-width: 760px) {
 	#page-links {
 		display: none !important;
@@ -87,24 +97,24 @@ nav {
 	.mobile-links {
 		position: relative;
 		top: 50%;
-		left: 50%;
-		transform: translate(-50%);
+		transform: translateY(-50%);
 	}
 
 	.drop-menu {
 		background: #287094;
 	}
 
-	.mobile-links {
-		opacity: 0;
-		transition: opacity 0.5s;
-		text-align: center;
-	}
 	.dropdown-btn {
 		display: inline-block !important;
 		width: 100vw;
 		height: 5vh;
 		background: #d4d4ce;
+	}
+
+	.mobile-links {
+		opacity: 0;
+		transition: opacity 0.5s;
+		text-align: center;
 	}
 
 	.arrows {
