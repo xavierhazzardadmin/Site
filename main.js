@@ -1,30 +1,8 @@
-function debugLogo() {
-	const elem = document.getElementById("logo");
+const startAnim = document.getElementById("startAnim");
 
-	if (!elem.style.border) {
-		elem.style.border = "1px solid black";
-	} else {
-		elem.style.border = null;
-	}
-}
-function debugNavLinks() {
-	const elem = document.getElementById("page-links");
+console.log(startAnim);
 
-	if (!elem.style.border) {
-		elem.style.border = "1px solid black";
-	} else {
-		elem.style.border = null;
-	}
-}
-
-function debugNavList() {
-	const elem = document.querySelector("#test");
-
-	// if (!elem.style.border) {
-	// 	elem.style.border = "1px solid black";
-	// } else {
-	// 	elem.style.border = null;
-	// }
-
-	console.log(elem.style.margin);
-}
+startAnim.addEventListener("click", () => {
+	alert("This func works!");
+	console.log("This func works!");
+});
