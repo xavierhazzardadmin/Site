@@ -63,7 +63,7 @@ nav {
 		top: 2px;
 		list-style: none;
 		list-style-type: none;
-		margin: 0 60px !important;
+		margin: 0 40px !important;
 	}
 
 	#page-links li::first-child {
@@ -78,6 +78,7 @@ nav {
 .v-link {
 	display: inline-block;
 	margin: 15px;
+	font-size: 17px;
 }
 
 .mobile-links {
@@ -100,9 +101,6 @@ nav {
 		touch-action: none;
 	}
 
-	.mobile-links {
-	}
-
 	.drop-menu {
 		background: #287094;
 	}
@@ -122,6 +120,13 @@ nav {
 		opacity: 0;
 		text-align: center;
 		transition: opacity 0.5s;
+	}
+
+	@media only screen and (min-height: 780px) {
+		.v-link {
+			display: inline-block;
+			margin: 20px;
+		}
 	}
 
 	.arrows {
@@ -170,7 +175,12 @@ nav {
 	top: 2px;
 	list-style: none;
 	list-style-type: none;
-	margin: 0 120px;
+	margin: 0 90px;
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0%;
 }
 
 a.a-link:link {
@@ -219,4 +229,9 @@ a.a-link:hover {
 	-ms-user-select: none;
 	user-select: none;
 	touch-action: none;
+}
+
+.big img {
+	width: 1280px;
+	height: 720px;
 }
