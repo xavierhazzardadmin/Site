@@ -13,11 +13,6 @@
 	font-weight: bold;
 }
 
-d-font.t-color {
-	font-family: sans-serif;
-	color: #023246 !important;
-}
-
 .d-font.white {
 	font-family: sans-serif;
 	color: white !important;
@@ -85,6 +80,10 @@ nav {
 	margin: 15px;
 }
 
+.mobile-links {
+	display: none;
+}
+
 @media only screen and (max-width: 760px) {
 	#page-links {
 		display: none !important;
@@ -92,18 +91,16 @@ nav {
 
 	#arrow-btn {
 		transition: transform 0.5s;
-		webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		touch-action: none;
 	}
 
 	.mobile-links {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
 	}
 
 	.drop-menu {
@@ -118,9 +115,13 @@ nav {
 	}
 
 	.mobile-links {
+		display: block;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
 		opacity: 0;
-		transition: opacity 0.5s;
 		text-align: center;
+		transition: opacity 0.5s;
 	}
 
 	.arrows {
@@ -175,19 +176,47 @@ nav {
 a.a-link:link {
 	text-decoration: none;
 	color: white;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	touch-action: none;
 }
 
 a.a-link:visited {
 	text-decoration: none;
 	color: white;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	touch-action: none;
 }
 
 a.a-link:active {
 	text-decoration: none;
 	color: white;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	touch-action: none;
 }
 
 a.a-link:hover {
 	text-decoration: none;
 	color: white;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	touch-action: none;
 }
