@@ -22,5 +22,5 @@ startAnim.addEventListener("click", () => {
 });
 
 pictures.addEventListener("click", (event) => {
-	console.log(event.target.src);
+	console.log(event.target.getAttribute("src"));
 });
