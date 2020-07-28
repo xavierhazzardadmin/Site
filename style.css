@@ -121,7 +121,12 @@ nav {
 		text-align: center;
 		transition: opacity 0.5s;
 	}
-
+	@media only screen and (min-height: 400px) {
+		.v-link {
+			display: inline-block;
+			margin: 13px;
+		}
+	}
 	@media only screen and (min-height: 780px) {
 		.v-link {
 			display: inline-block;
@@ -231,7 +236,29 @@ a.a-link:hover {
 	touch-action: none;
 }
 
-.big img {
-	width: 1280px;
-	height: 720px;
+.pic-full {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.full {
+	position: relative;
+	width: 1280;
+	height: auto;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.exit {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	width: 4vh;
+	height: 4vh;
 }
